@@ -1,0 +1,27 @@
+weight=0
+cost=0
+#Ground Shipping
+if weight<=2:
+  cost=weight*1.50+20
+elif weight<=6:
+  cost=weight*3.00+20
+elif weight<=10:
+  cost=weight*4.00+20
+elif weight>10:
+  cost=weight*4.75+20
+print(cost)
+print("Ground Shipping Premium")
+
+print("Flat charge: $125.00")
+#Drone Shipping
+dweight=1.5
+if dweight<=2:
+  cost=dweight*4.50
+elif dweight<=6:
+  cost=dweight*9.00
+elif dweight<=10:
+  cost=dweight*12.00
+elif dweight>10:
+  cost=dweight*14.255
+dweight=1.5
+print(cost)
